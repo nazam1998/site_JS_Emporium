@@ -9,8 +9,27 @@ body {
   font-weight: bold;
 }
 
-a, a :hover {
+nav a {
+  text-transform: uppercase;
   text-decoration: none;
+}
+
+#first-Section {
+  background-image: url("../images/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 30% right 30%;
+  background-size: contain;
+  background-color: #F3F3F3;
+}
+#first-Section h1 {
+  font-weight: light;
+}
+#first-Section h1 > p {
+  font-size: 105px;
+  font-weight: bold;
+}
+#first-Section button {
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
