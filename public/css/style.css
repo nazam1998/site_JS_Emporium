@@ -17,7 +17,7 @@ nav a {
 #first-Section {
   background-image: url("../images/slider-1.jpg");
   background-repeat: no-repeat;
-  background-position: bottom 30% right 30%;
+  background-position: bottom 30% right 25%;
   background-size: contain;
   background-color: #F3F3F3;
 }
@@ -30,6 +30,40 @@ nav a {
 }
 #first-Section button {
   border-radius: 25px;
+}
+
+#service .row {
+  color: white;
+}
+#service .row > div:first-child {
+  background-image: url("../images/services/service-1.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#service .row > div:nth-child(2) {
+  background-image: url("../images/services/service-2.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#service .row > div:last-child {
+  background-image: url("../images/services/slider-3.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#service .row hr {
+  background-color: white;
+}
+#service .row p {
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */

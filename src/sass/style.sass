@@ -2,6 +2,8 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap')
 
+$gris : #F3F3F3
+
 body
     font-family: 'Source Sans Pro', sans-serif
 
@@ -15,13 +17,43 @@ nav
 #first-Section
     background-image: url('../images/slider-1.jpg')
     background-repeat: no-repeat
-    background-position: bottom 30% right 30%
+    background-position: bottom 30% right 25%
     background-size: contain
-    background-color: #F3F3F3
-    h1 
+    background-color: $gris
+    h1
         font-weight: light
         &>p
             font-size: 105px
             font-weight: bold
-    button 
+    button
         border-radius: 25px
+
+#service
+    .row
+
+        color: white
+        &>div:first-child
+            background-image: url('../images/services/service-1.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            width: 100%
+        &>div:nth-child(2)
+            background-image: url('../images/services/service-2.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            width: 100%
+        &>div:last-child
+            background-image: url('../images/services/slider-3.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            width: 100%
+        hr
+            background-color: white
+        p 
+            font-weight: bolder
