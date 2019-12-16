@@ -62,7 +62,9 @@ nav a {
 #service .row hr {
   background-color: white;
 }
-#service .row p {
+#service .row a {
+  text-decoration: none;
+  color: white;
   font-weight: bolder;
 }
 
