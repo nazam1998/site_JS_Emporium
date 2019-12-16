@@ -23,6 +23,7 @@ nav a {
 }
 #first-Section h1 {
   font-weight: light;
+  color: #bd584e;
 }
 #first-Section h1 > p {
   font-size: 105px;
@@ -30,6 +31,7 @@ nav a {
 }
 #first-Section button {
   border-radius: 25px;
+  background-color: #bd584e;
 }
 
 #service .row {
@@ -66,6 +68,40 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
+  font-size: 22px;
+}
+
+#recent {
+  text-align: center;
+}
+#recent img {
+  width: 100%;
+}
+#recent p {
+  font-size: 17px;
+  font-weight: bold;
+}
+#recent span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.barre {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.prix {
+  text-decoration: none;
+  color: #bd584e;
+}
+
+.sale {
+  background-color: #bd584e;
+  color: white;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
