@@ -7,6 +7,7 @@ $red : rgb(189, 88, 78)
 
 body
     font-family: 'Source Sans Pro', sans-serif
+    margin: 0
 
 .bold
     font-weight: bold
@@ -15,6 +16,10 @@ nav
     a
         text-transform: uppercase
         text-decoration: none
+        &:hover
+            color: black
+            background-color: white
+
 #first-Section
     background-image: url('../images/slider-1.jpg')
     background-repeat: no-repeat
@@ -88,3 +93,40 @@ nav
     font-size: 10px
     border-radius: 50%
     padding: 15px
+
+#discover
+    display: flex
+    background-image: url('../images/cta-bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: center
+    width: 100%
+    height: 500px
+    justify-content: center
+    align-items: center
+    span
+        background-color: $red
+        padding: 15px 20px
+        font-size: 12px
+        border-radius: 25px
+
+.rouge
+    background-color: $red
+    color: white
+.gris
+    background-color: $gris
+.noir
+    background-color: #000000
+    color: white
+
+section
+    button
+        text-transform: uppercase
+
+#review
+    .col-3
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
