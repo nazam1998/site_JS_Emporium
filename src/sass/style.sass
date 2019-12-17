@@ -8,6 +8,7 @@ $red : rgb(189, 88, 78)
 body
     font-family: 'Source Sans Pro', sans-serif
     margin: 0
+    overflow-x: hidden
 
 .bold
     font-weight: bold
@@ -23,7 +24,7 @@ nav
 #first-Section
     background-image: url('../images/slider-1.jpg')
     background-repeat: no-repeat
-    background-position: bottom 30% right 25%
+    background-position: bottom 30% right 35%
     background-size: contain
     background-color: $gris
     h1
@@ -34,6 +35,7 @@ nav
             font-weight: bold
     button
         border-radius: 25px
+        border-color: $red
         background-color: $red
 
 #service
@@ -45,22 +47,19 @@ nav
             height: 185px
             background-size: cover
             background-position: center
-            background-repeat: no-repeat
-            width: 100%
+
         &>div:nth-child(2)
             background-image: url('../images/services/service-2.jpg')
             height: 185px
             background-size: cover
             background-position: center
-            background-repeat: no-repeat
-            width: 100%
+
         &>div:last-child
             background-image: url('../images/services/slider-3.jpg')
             height: 185px
             background-size: cover
             background-position: center
-            background-repeat: no-repeat
-            width: 100%
+
         hr
             background-color: white
         a
@@ -130,3 +129,19 @@ section
         flex-direction: column
         justify-content: space-between
         align-items: center
+
+footer
+    background-color: #212121
+    .row
+        padding: 100px 50px
+        color: #9b9b9b
+        .col-3:not(:last-child)
+            border-right: 1px solid #9b9b9b
+    span
+        color: white
+    li 
+        list-style: '>    ' 
+    .copyright
+        text-transform: uppercase
+        background-color: #0a0a0a
+        color: #838383
