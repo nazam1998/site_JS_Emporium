@@ -128,6 +128,9 @@ nav a:hover {
   background-color: #bd584e;
   color: white;
 }
+.rouge button:hover {
+  background-color: white;
+}
 
 .gris {
   background-color: #F3F3F3;
@@ -142,7 +145,7 @@ section button {
   text-transform: uppercase;
 }
 
-#review .col-3 {
+#review .col-lg-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -152,23 +155,41 @@ section button {
 footer {
   background-color: #212121;
 }
-footer .row {
-  padding: 100px 50px;
+footer > .row {
+  padding: 100px 10px;
   color: #9b9b9b;
 }
-footer .row .col-3:not(:last-child) {
-  border-right: 1px solid #9b9b9b;
+footer > .row > div:not(:last-child) {
+  border-right: 1px solid #353535;
+}
+footer > .row > div:not(:last-child) a {
+  color: #9b9b9b;
+}
+footer > .row > div:not(:last-child) hr {
+  background-color: #353535;
 }
 footer span {
   color: white;
+  font-weight: bold;
 }
 footer li {
-  list-style: ">    ";
+  list-style: none;
+}
+footer li::before {
+  content: ">";
+  margin-right: 20px;
 }
 footer .copyright {
   text-transform: uppercase;
   background-color: #0a0a0a;
   color: #838383;
+}
+
+#tag .tags {
+  border: 1px solid #353535;
+  font-weight: bold;
+  font-size: 90%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

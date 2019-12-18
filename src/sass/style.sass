@@ -113,6 +113,8 @@ nav
 .rouge
     background-color: $red
     color: white
+    button:hover
+        background-color: white
 .gris
     background-color: $gris
 .noir
@@ -124,7 +126,7 @@ section
         text-transform: uppercase
 
 #review
-    .col-3
+    .col-lg-3
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -132,16 +134,31 @@ section
 
 footer
     background-color: #212121
-    .row
-        padding: 100px 50px
+    &>.row
+        padding: 100px 10px
         color: #9b9b9b
-        .col-3:not(:last-child)
-            border-right: 1px solid #9b9b9b
+        &>div:not(:last-child)
+            border-right: 1px solid #353535
+            a
+                color: #9b9b9b
+            hr
+                background-color: #353535
+
     span
         color: white
-    li 
-        list-style: '>    ' 
+        font-weight: bold
+    li
+        list-style: none
+        &::before
+            content: '>'
+            margin-right: 20px
     .copyright
         text-transform: uppercase
         background-color: #0a0a0a
         color: #838383
+#tag 
+    .tags
+        border: 1px solid #353535
+        font-weight: bold
+        font-size: 90%
+        text-align: center
