@@ -1,14 +1,24 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@media (max-width: 540px) {
+  body {
+    margin: auto;
+    overflow-x: hidden;
+  }
+}
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .bold {
   font-weight: bold;
+}
+
+header {
+  transition: top 0.5s;
+  top: -100px;
 }
 
 nav a {
@@ -17,7 +27,46 @@ nav a {
 }
 nav a:hover {
   color: black;
-  background-color: white;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.modal-content button {
+  background-color: black;
+  color: white;
+  border-color: black;
+  border-radius: 12px;
+}
+
+.sticky + section:first-child {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 #first-Section {
@@ -39,6 +88,20 @@ nav a:hover {
   border-radius: 25px;
   border-color: #bd584e;
   background-color: #bd584e;
+}
+#first-Section button::after {
+  content: " >";
+  opacity: 0;
+  transition: 1s;
+}
+#first-Section button:hover {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+#first-Section button:hover::after {
+  opacity: 1;
+  margin-left: 20px;
 }
 
 #service .row {
@@ -75,9 +138,6 @@ nav a:hover {
 #recent {
   text-align: center;
 }
-#recent img {
-  width: 100%;
-}
 #recent p {
   font-size: 17px;
   font-weight: bold;
@@ -85,6 +145,42 @@ nav a:hover {
 #recent span {
   font-weight: bold;
   font-size: 17px;
+}
+
+.image-pro {
+  overflow: hidden;
+}
+.image-pro img {
+  width: 100%;
+  transition: ease 1s;
+}
+.image-pro:hover img {
+  transform: scale(1.2);
+}
+.image-pro:hover .cache {
+  opacity: 0.5;
+}
+.image-pro:hover .cache a {
+  padding-bottom: 10px;
+}
+.image-pro .cache {
+  position: absolute;
+  bottom: 98px;
+  z-index: 3;
+  opacity: 0;
+  transition: 1s ease;
+}
+.image-pro .cache a {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  transition: 1s ease;
+}
+.image-pro .cache a:first-child {
+  background-color: red;
+}
+.image-pro .cache a:last-child {
+  background-color: black;
 }
 
 .barre {
@@ -100,9 +196,10 @@ nav a:hover {
 .sale {
   background-color: #bd584e;
   color: white;
-  font-size: 10px;
+  text-align: center;
+  font-size: 9px;
   border-radius: 50%;
-  padding: 15px;
+  padding: 15px 3px;
 }
 
 #discover {
@@ -150,6 +247,17 @@ section button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#carousel {
+  overflow: hidden;
+  text-align: center;
+}
+#carousel .row {
+  flex-wrap: nowrap;
+}
+#carousel img {
+  width: 100%;
 }
 
 footer {
