@@ -1,3 +1,8 @@
+import {
+    carousel
+} from './carousel.js'
+
+
 let day = document.querySelectorAll('nav button')[0];
 let night = document.querySelectorAll('nav button')[1];
 let connect = document.querySelectorAll('nav button')[2];
@@ -87,7 +92,7 @@ window.onclick = function (event) {
 let header = document.getElementsByTagName('header')[0];
 let img = document.querySelector('img');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 350) {
         if (document.body.classList.contains('bg-dark')) {
 
             head.classList.add('bg-dark');
@@ -110,3 +115,22 @@ window.addEventListener('scroll', () => {
 
     }
 });
+
+// Nav bar produit
+
+let produit = document.getElementById('produit');
+
+let lienProd = header.querySelectorAll('a')[1];
+
+lienProd.addEventListener('mouseover', () => {
+    produit.style.display = 'block';
+
+    produit.addEventListener('mouseout', () => {
+        produit.style.display = 'none';
+    })
+    produit.addEventListener('mouseover', () => {
+        produit.style.display = 'block';
+    })
+})
+
+carousel();

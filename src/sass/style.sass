@@ -11,14 +11,14 @@ $red : rgb(189, 88, 78)
 body
     font-family: 'Source Sans Pro', sans-serif
     margin: 0
-    // overflow-x: hidden
+    overflow-x: hidden
 
 .bold
     font-weight: bold
 
 // Header + nav
 header
-    transition: top 0.5s
+    transition: 0.5s
     top: -100px
 
 nav
@@ -27,7 +27,22 @@ nav
         text-decoration: none
         &:hover
             color: black
+// Produit
 
+#produit
+    position: absolute
+    display: none
+    left: 640px
+    background-color: #2e2e2e
+    list-style: none
+    text-align: left
+    transition: 1s
+    li
+        padding: 10px 0
+        padding-right: 50px
+        a
+            color: #bebebe
+            font-size: 85%
 // Modal
 
 .close
@@ -40,7 +55,6 @@ nav
     width: 100%
     height: 100%
     overflow: auto
-    background-color: rgb(0,0,0)
     background-color: rgba(0,0,0,0.4)
 .modal-content
     margin: 15% auto
@@ -55,14 +69,15 @@ nav
 
 // Nav sticky effect
 
-.sticky + section:first-child
-    padding-top: 102px
+// .sticky + section:first-child
+//     padding-top: 102px
 
 .sticky
     position: fixed
     top: 0
     width: 100%
     z-index: 2
+    transition: 1s ease
 
 // Section avec gros T-Shirt
 
@@ -85,7 +100,7 @@ nav
         &::after
             content: ' >'
             opacity: 0
-            transition: 1s
+            transition: 0.5s
         &:hover
             border-color: black
             background-color: black
@@ -139,12 +154,12 @@ nav
         width: 100%
         transition: ease 1s
     &:hover
-            img
-                transform: scale(1.2)
-            .cache
-                opacity: 0.5
-                a
-                    padding-bottom: 10px
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 10px
     .cache
         position: absolute
         bottom: 98px
@@ -157,7 +172,7 @@ nav
             padding-bottom: 0px
             transition: 1s ease
         a:first-child
-            background-color: red
+            background-color: $red
         a:last-child
             background-color: black
 
@@ -214,13 +229,6 @@ section
         justify-content: space-between
         align-items: center
 
-#carousel
-    overflow: hidden
-    text-align: center
-    .row
-        flex-wrap: nowrap
-    img
-        width: 100%
 footer
     background-color: #212121
     &>.row
