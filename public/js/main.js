@@ -52,6 +52,7 @@ console.log(close);
 
 connect.addEventListener('click', () => {
     modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 
 });
 
@@ -75,6 +76,7 @@ modalButton[1].addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     modal.style.display = 'none';
+    document.body.style.overflow = '';
 });
 
 // Ferme le modal lorsqu'on clique en dehors de la fenetre
@@ -82,6 +84,7 @@ close.addEventListener('click', () => {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        document.body.style.overflow = '';
     }
 }
 
@@ -128,9 +131,30 @@ lienProd.addEventListener('mouseover', () => {
     produit.addEventListener('mouseout', () => {
         produit.style.display = 'none';
     })
-    produit.addEventListener('mouseover', () => {
-        produit.style.display = 'block';
+    lienProd.addEventListener('mouseout', () => {
+        produit.addEventListener('mouseover', () => {
+            produit.style.display = 'block';
+        })
     })
-})
+});
+
+// Discover bg sticky
+
+let discover = document.getElementById('discover');
+
+window.addEventListener('scroll', () => {
+
+    let scrolled = window.pageYOffset;
+    let limit = discover.offsetTop + discover.offsetHeight;
+
+    if (scrolled > discover.offsetTop-3000 && scrolled <= limit+3000) {
+
+        discover.style.backgroundPositionY = (scrolled - discover.offsetTop-800) * 0.3 + "px";
+
+    } else {
+
+        discover.style.backgroundPositionY = "0";
+    }
+});
 
 carousel();
