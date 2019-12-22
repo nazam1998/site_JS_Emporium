@@ -224,6 +224,30 @@ section
 #myCarousel
     overflow-x: hidden
     margin: 0 auto
+    .image-pro
+        overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 5px
+    .cache
+        position: absolute
+        bottom: 161px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 10px
+            padding-bottom: 0px
+            transition: 1s ease
+
     #carousel-content
         transition: 1s
         position: relative

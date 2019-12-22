@@ -8,7 +8,7 @@ let night = document.querySelectorAll('nav button')[1];
 let connect = document.querySelectorAll('nav button')[2];
 let head = document.getElementsByTagName('header')[0];
 let logo = document.querySelector('img');
-
+let review = document.getElementById('review');
 // Permet de passer le bodyen mode nuit 
 
 day.addEventListener('click', () => {
@@ -16,6 +16,8 @@ day.addEventListener('click', () => {
     connect.classList.replace('bg-light', 'bg-dark');
     connect.classList.replace('text-dark', 'text-white');
     document.body.classList.remove('text-white');
+    review.querySelectorAll('.col-lg-3')[0].style.color='';
+    review.querySelectorAll('.col-lg-3')[2].style.color='';
     logo.style.filter = '';
     head.querySelectorAll('a').forEach(e => {
         e.classList.replace('text-white', 'text-secondary');
@@ -27,6 +29,8 @@ night.addEventListener('click', () => {
     connect.classList.replace('bg-dark', 'bg-light');
     connect.classList.replace('text-white', 'text-dark');
     document.body.classList.add('text-white');
+    review.querySelectorAll('.col-lg-3')[0].style.color='black';
+    review.querySelectorAll('.col-lg-3')[2].style.color='black';
     logo.style.filter = 'drop-shadow(16px 16px 20px red) invert(75%)';
 
     head.querySelectorAll('a').forEach(e => {
@@ -46,7 +50,6 @@ let modalButton = document.querySelectorAll('.modal button');
 let formulaire = document.getElementsByClassName('formulaire');
 
 let close = document.getElementsByClassName('close')[0];
-console.log(close);
 
 // Déclenche le modal lorsqu'on clique sur le bouton connexion
 
@@ -147,9 +150,9 @@ window.addEventListener('scroll', () => {
     let scrolled = window.pageYOffset;
     let limit = discover.offsetTop + discover.offsetHeight;
 
-    if (scrolled > discover.offsetTop-3000 && scrolled <= limit+3000) {
+    if (scrolled > discover.offsetTop - 3000 && scrolled <= limit + 3000) {
 
-        discover.style.backgroundPositionY = (scrolled - discover.offsetTop-800) * 0.3 + "px";
+        discover.style.backgroundPositionY = (scrolled - discover.offsetTop - 800) * 0.3 + "px";
 
     } else {
 
