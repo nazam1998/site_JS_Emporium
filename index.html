@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Emporium</title>
+</head>
+
+<!-- Nav bar + logo -->
+
+<body>
+    <header>
+        <img src="public/images/logo.png" class="mt-5 mx-auto d-block"></img>
+
+        <div id='bars' class="container change">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="row justify-content-around m-5">
+            <div class="row offset-3 col-lg-6 container mt-1">
+
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Home</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Product</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Blog</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Elements</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">About</a>
+                <a href="#" class="nav-items nav-link col-lg-2 text-secondary">Contact</a>
+            </div>
+
+            <div class="offset-1 col-lg-1 color">
+
+                <button class="p-2 bg-white mr-1 border-dark"></button><button
+                    class="p-2 bg-dark border-white"></button>
+            </div>
+
+            <button class="col-lg-1 bg-dark text-white rounded mr-2">Connexion</button>
+        </nav>
+        <!-- Produit -->
+        <!-- ul>li*4>a -->
+        <ul id="produit">
+            <li><a href="#">Woocommerce Shop Archive</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">My Account</a></li>
+        </ul>
+    </header>
+    <!-- Modal -->
+
+    <section id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <div class="row justify-content-center container">
+                <div class="col-lg-3">
+                    <button>Se connecter</button>
+                </div>
+                <div class="col-lg-3 ">
+                    <button>S'inscrire</button>
+                </div>
+            </div>
+
+            <hr class="bg-dark w-100">
+
+            <div class="formulaire container d-none">
+
+                <p>Mail</p><input type="mail" placeholder="fish@hotmail.com">
+                <p class="mt-3">Password</p><input type="password">
+                <br>
+                <button class="mt-4">Se connecter</button>
+            </div>
+
+            <div class="formulaire container d-none">
+
+                <p class="mt-3">Nom</p><input type="text" placeholder="Nom">
+                <p class="mt-3">Prénom</p><input type="text" placeholder="prénom">
+                <p class="mt-3">Age</p><input type="text" placeholder="age">
+
+                <p class="mt-3">Mail</p><input type="mail" placeholder="fish@hotmail.com">
+                <p class="mt-3">Password</p><input type="password">
+                <br>
+                <button class="mt-4">S'inscrire</button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section avec t-shirt en bg -->
+
+    <section id='first-Section' class="p-5">
+        <div class="row container mt-5 p-5 align-items-center">
+            <div class="offset-4 col-lg-6">
+                <h1 class="mb-3">Shop at
+                    <p class="text-dark">emporium.</p>
+                </h1>
+                <p class="text-dark">A wonderful serenity has taken possession of my entire soul, like these sweet
+                    mornings
+                    of spring which I
+                    enjoy with my.
+                </p>
+                <button class="text-white px-4 py-3">Sale items</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section avec 3 col-lg qui contiennent chaque une image en background -->
+
+    <!-- section>.row>col-lg-3*3>div>a+hr -->
+
+    <section id="service" class="my-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-3 p-5 ml-4">
+                <div class="text-center">
+                    <a href="#"> Living room</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+            <div class="col-lg-3 p-5 ml-4">
+                <div class="text-center">
+                    <a href="#">Sale items</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+            <div class="col-lg-3 p-5 ml-4">
+                <div class="text-center">
+                    <a href="#">Clothes</a>
+                    <hr class="w-25">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Section avec les produits recent et leurs prix + promo -->
+
+
+    <!-- section>h4+.row>.col-lg-4*9>img+div>p+span -->
+
+    <section id="recent" class="container my-5">
+        <h4>Recent Products</h4>
+        <div class="row container">
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Luxury Sofa</p>
+                    <span class="prix">$600.00</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-gloves.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row my-3 align-items-center">
+                    <span class="offset-1 sale col-lg-2">Sale!</span>
+                    <div class="offset-1 col-lg-5">
+                        <p>Leather Gloves</p>
+                        <div>
+                            <span class="barre">$34.00</span>
+                            <span class="prix">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-cups.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Colorful Bowl</p>
+                    <span class="prix">$18.00</span>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-bag.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row my-3 align-items-center">
+                    <span class="offset-1 sale col-lg-2">Sale!</span>
+                    <div class="offset-1 col-lg-5">
+                        <p>Women Bag</p>
+                        <div>
+                            <span class="barre">$420.00</span>
+                            <span class="prix">$350.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-tshitr.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Minimal T-Shirt</p>
+                    <span class="prix">$15.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-plates.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Plates Set</p>
+                    <span class="prix">$18.00</span>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Modern Sofa</p>
+                    <span class="prix">$900.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-bed.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Bed Linen</p>
+                    <span class="prix">$79.00</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="image-pro">
+                    <img src="public/images/products_mini/product-shoes.jpg" alt="">
+                    <div class="cache row container">
+                        <a href="#" class="col">
+                            <i class="far fa-eye "></i>
+                            <p>View details</p>
+                        </a>
+                        <a href="#" class="col">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Select options</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <p>Minimal Shoes</p>
+                    <span class="prix">$60.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discover">
+
+        <div class="text-center">
+            <h1 class="text-white ">Discover Thousands Of Great Products</h1>
+            <span class="text-white">LEARN MORE</span>
+        </div>
+
+
+    </section>
+
+    <!-- Carousel -->
+
+    <section id="carousel text-center">
+        <h4 class="text-center my-5">Hot Fashion Products</h4>
+        <div class="carousel  container" id="myCarousel">
+            <div id="carousel-content" class="flex-nowrap row">
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-tshitr-white-700x500.jpg" alt="">
+                        <div class="cache row container text-center">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal T-Shirt</p>
+                        <span class="prix">$23.00</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-bag-2-700x500.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 sale col-lg-2">Sale!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Red Bag</p>
+                            <div>
+                                <span class="barre">$600.00</span>
+                                <span class="prix">$450.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-jacket-700x500.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Sporty Jacket</p>
+                        <span class="prix">$40.00</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-shoes-700x500.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal Shoes</p>
+                        <span class="prix">$60.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-tshitr-700x500.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-3 item-desc">
+                        <p>Minimal T-Shirt</p>
+                        <span class="prix">$15.00</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products/product-bag-700x500.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 sale col-lg-2">Sale!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Women Bag</p>
+                            <div>
+                                <span class="barre">$420.00</span>
+                                <span class="prix">$350.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="image-pro item-image">
+                        <img src="public/images/products_mini/product-gloves.jpg" alt="">
+                        <div class="cache row container">
+                            <a href="#" class="col">
+                                <i class="far fa-eye "></i>
+                                <p>View details</p>
+                            </a>
+                            <a href="#" class="col">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Select options</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row my-3 align-items-center item-desc">
+                        <span class="offset-1 sale col-lg-2">Sale!</span>
+                        <div class="offset-1 col-lg-5">
+                            <p>Leather Gloves</p>
+                            <div>
+                                <span class="barre">$34.00</span>
+                                <span class="prix">$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="button-car" class="row justify-content-center mx-auto">
+            <span class="p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class="p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class="p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+            <span class="p-1 rounded-circle border border-dark ml-1 bg-light"></span>
+        </div>
+
+    </section>
+
+    <!-- Section review -->
+
+    <section id="review" class="my-5">
+        <div class="row text-center justify-content-around">
+            <div class="col-lg-3 p-5 gris">
+                <i class="far fa-check-circle fa-2x"></i>
+                <h3>Trsuted By 10,000+ Customers</h3>
+                <p class="p-4 text-dark">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia,
+                    there live the
+                    blind texts.</p>
+                <button class="noir px-3 py-2 rounded">Learn more</button>
+            </div>
+            <div class="col-lg-3 p-5 rouge">
+                <i class="fas fa-paper-plane fa-2x"></i>
+                <h3>Very Fast Shipping</h3>
+                <p class="p-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the
+                    blind texts.
+                </p>
+                <button class="px-3 py-2 rounded">Learn more</button>
+            </div>
+            <div class="col-lg-3 p-5 gris">
+                <i class="far fa-check-circle fa-2x"></i>
+                <h3>Trsuted By 10,000+ Customers</h3>
+                <p class="p-4 text-dark">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia,
+                    there live the
+                    blind texts.</p>
+                <button class="noir px-3 py-2 rounded">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer du site web -->
+
+    <!-- ftr>(div.row.container>.col-lg-3*3)+.copyright -->
+
+    <footer>
+        <div class="row justify-content-center">
+
+            <div class="offset-1 col-lg-3">
+                <span>ABOUT US</span>
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                    which I
+                    enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was
+                    created
+                    for the bliss of </p>
+            </div>
+
+            <div class="col-lg-3">
+                <span>RECENT POSTS</span>
+                <ul>
+                    <li><a href="#"> Hello world!</a></li>
+                    <hr>
+                    <li><a href="#"> Wonderful serenity has taken</a></li>
+                    <hr>
+                    <li><a href="#"> In my soul and absorb its power</a></li>
+                    <hr>
+                    <li><a href="#"> I hear the buzz of the little</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+            <div id='tag' class="col-lg-3">
+                <span>TAG CLOUD</span>
+                <div class="row ">
+                    <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3"><a>BUSINESS</a></div>
+                    <div class="tags px-2 py-2 mb-2 ml-2 col-lg-4"><a>CONFERENCE</a></div>
+                    <div class="w-100"></div>
+                    <div class="tags px-2 py-2  mb-2 ml-2 col-lg-3"><a>GADGETS</a></div>
+                    <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3"><a>IDENTITY</a></div>
+                    <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3"><a>LOGO</a></div>
+                    <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3"><a>PHOTOGRAPHY</a></div>
+                    <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3"><a>TIME</a></div>
+                    <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3"><a>TRIPS</a></div>
+                    <div class="tags px-2 py-2 mb-2 ml-2 col-lg-3"><a>WORKS</a></div>
+                    <div class="tags px-2 py-2 ml-2 mb-2 col-lg-3"><a>WORK SPACE</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright bg-dark text-center py-5 ">
+            Copyright 2020 GoodLayers, All Right Reserved
+        </div>
+
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="public/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap')
+
+$line: #353535
+$gris : #F3F3F3
+$red : rgb(189, 88, 78)
+
+// Body
+body
+    font-family: 'Source Sans Pro', sans-serif
+    margin: 0
+    overflow-x: hidden
+
+.bold
+    font-weight: bold
+
+// Header + nav
+header
+    transition: 0.5s
+    top: -100px
+    #bars
+        float: right
+
+nav
+    a
+        text-transform: uppercase
+        text-decoration: none
+        &:hover
+            color: black
+// Produit
+
+#produit
+    position: absolute
+    display: none
+    left: 640px
+    background-color: #2e2e2e
+    list-style: none
+    text-align: left
+    transition: 1s
+    li
+        padding: 10px 0
+        padding-right: 50px
+        a
+            color: #bebebe
+            font-size: 85%
+            padding: 30px 0
+// Modal
+
+.close
+    cursor: pointer
+.modal
+    display: none
+    position: fixed
+    z-index: 1
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0,0,0,0.4)
+.modal-content
+    margin: 15% auto
+    padding: 20px
+    border: 1px solid #888
+    width: 50%
+    button
+        background-color: black
+        color: white
+        border-color: black
+        border-radius: 12px
+
+// Nav sticky effect
+
+.sticky
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 2
+    transition: 1s ease
+
+// Section avec gros T-Shirt
+
+#first-Section
+    background-image: url('../images/slider-1.jpg')
+    background-repeat: no-repeat
+    background-position: bottom 30% right 35%
+    background-size: contain
+    background-color: $gris
+    h1
+        font-weight: light
+        color: $red
+        &>p
+            font-size: 105px
+            font-weight: bold
+    button
+        border-radius: 25px
+        border-color: $red
+        background-color: $red
+        &::after
+            content: ' >'
+            opacity: 0
+            transition: 0.5s
+        &:hover
+            border-color: black
+            background-color: black
+            color: white
+            &::after
+                opacity: 1
+                margin-left: 20px
+
+#service
+    .row
+
+        color: white
+        &>div:first-child
+            background-image: url('../images/services/service-1.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        &>div:nth-child(2)
+            background-image: url('../images/services/service-2.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        &>div:last-child
+            background-image: url('../images/services/slider-3.jpg')
+            height: 185px
+            background-size: cover
+            background-position: center
+
+        hr
+            background-color: white
+        a
+            text-decoration: none
+            color: white
+            font-weight: bolder
+            font-size: 22px
+
+#recent
+    text-align: center
+
+    p
+        font-size: 17px
+        font-weight: bold
+    span
+        font-weight: bold
+        font-size: 17px
+.image-pro
+    overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 10px
+    .cache
+        position: absolute
+        bottom: 98px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 20px
+            padding-bottom: 0px
+            transition: 1s ease
+        a:first-child
+            background-color: $red
+        a:last-child
+            background-color: black
+
+.barre
+    text-decoration: line-through
+    color: gray
+.prix
+    text-decoration: none
+    color: $red
+.sale
+    background-color: $red
+    color: white
+    text-align: center
+    font-size: 9px
+    border-radius: 50%
+    padding: 15px 3px
+
+#discover
+    display: flex
+    background-image: url('../images/cta-bg.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    // background-attachment: fixed
+    background-position: center
+    width: 100%
+    height: 700px
+    justify-content: center
+    align-items: center
+    span
+        background-color: $red
+        padding: 15px 20px
+        font-size: 12px
+        border-radius: 25px
+
+.rouge
+    background-color: $red
+    color: white
+    button:hover
+        background-color: white
+.gris
+    background-color: $gris
+.noir
+    background-color: #000000
+    color: white
+
+section
+    button
+        text-transform: uppercase
+
+// Carousel
+#myCarousel
+    overflow-x: hidden
+    margin: 0 auto
+    .image-pro
+        overflow: hidden
+    img
+        width: 100%
+        transition: ease 1s
+    &:hover
+        img
+            transform: scale(1.2)
+        .cache
+            opacity: 0.7
+            a
+                padding-bottom: 5px
+    .cache
+        position: absolute
+        bottom: 161px
+        z-index: 3
+        opacity: 0
+        transition: 1s ease
+        a
+            color: white
+            padding-top: 10px
+            padding-bottom: 0px
+            transition: 1s ease
+
+    #carousel-content
+        transition: 1s
+        position: relative
+        left: 0
+#button-car
+    cursor: pointer
+
+#review
+    .col-lg-3
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+footer
+    background-color: #212121
+    &>.row
+        padding: 100px 10px
+        color: #9b9b9b
+        &>div:not(:last-child)
+            border-right: 1px solid $line
+            a
+                color: #9b9b9b
+            hr
+                background-color: $line
+
+    span
+        color: white
+        font-weight: bold
+    li
+        list-style: none
+        &::before
+            content: '>'
+            margin-right: 20px
+    .copyright
+        text-transform: uppercase
+        background-color: #0a0a0a
+        color: #838383
+#tag
+    .tags
+        border: 1px solid $line
+        font-weight: bold
+        font-size: 90%
+        text-align: center
+
+@import '../../src/sass/responsive.sass'
