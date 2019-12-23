@@ -58,6 +58,7 @@ function carousel() {
             cpt = (cpt + 1) % 4;
             carousel.style.left = pos[cpt];
         } else if (event.which == '37') {
+            
             cpt = (cpt - 1) % 4;
             if (cpt < 0) {
                 cpt = 3;
