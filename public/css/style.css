@@ -1,6 +1,20 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+<<<<<<< HEAD
+=======
+@media (max-width: 540px) {
+  body {
+    margin: auto;
+    overflow-x: hidden;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+>>>>>>> b5c55d948f6934acbd63ba05a863180d15d29dfa
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -15,9 +29,12 @@ header {
   transition: 0.5s;
   top: -100px;
 }
+<<<<<<< HEAD
 header #bars {
   float: right;
 }
+=======
+>>>>>>> b5c55d948f6934acbd63ba05a863180d15d29dfa
 
 nav a {
   text-transform: uppercase;
@@ -290,7 +307,10 @@ section button {
 #myCarousel #carousel-content {
   transition: 1s;
   position: relative;
+<<<<<<< HEAD
   left: 0;
+=======
+>>>>>>> b5c55d948f6934acbd63ba05a863180d15d29dfa
 }
 
 #button-car {
@@ -344,6 +364,7 @@ footer .copyright {
   text-align: center;
 }
 
+<<<<<<< HEAD
 @media (max-width: 540px) {
   body {
     margin: 0 auto;
@@ -378,4 +399,6 @@ footer .copyright {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+=======
+>>>>>>> b5c55d948f6934acbd63ba05a863180d15d29dfa
 /*# sourceMappingURL=style.css.map */
